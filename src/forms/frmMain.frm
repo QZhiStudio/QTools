@@ -264,6 +264,7 @@ Private Sub TxtToBmp()
     yCursor = 0
     
     picImg.Move 0, 0, 8, 16
+    picImg.Cls
     
     SendMessageA hProgress, PBM_SETRANGE32, 0, UBound(bytFileData)
     SendMessageA hProgress, PBM_SETPOS, 0, 0
